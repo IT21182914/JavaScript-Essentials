@@ -1,18 +1,37 @@
-const exampleAsyncFunction = async () => {
-  console.log("Start");
+// const exampleAsyncFunction = async () => {
+//   console.log("Start");
 
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+//   await new Promise((resolve) => setTimeout(resolve, 5000));
 
-  console.log("After waiting for 5 seconds");
-  console.log("Start")
-  await new Promise((resolve) => setTimeout(resolve, 5000))
-  console.log("End")
+//   console.log("After waiting for 5 seconds");
+//   console.log("Start")
+//   await new Promise((resolve) => setTimeout(resolve, 5000))
+//   console.log("End")
+// };
+
+// // Call the async function
+// exampleAsyncFunction();
+
+
+const asyncFunction = async () => {
+  console.log('Start');
+
+  const result = await fetchData();
+  console.log('Data fetched:', result);
+
+  console.log('End');
 };
 
-// Call the async function
-exampleAsyncFunction();
+const fetchData = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Some data');
+    }, 2000);
+  });
+};
 
-
+//Call the async function
+asyncFunction();
 
 
 

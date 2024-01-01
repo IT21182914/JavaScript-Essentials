@@ -1,4 +1,4 @@
-let p = new Promise((resolve, reject) => {
+let p = new Promise((resolve, reject) => { //promise Constructor getting a callback function with two parameters resolve and reject 
   let a = 1 + 1;
 
   if (a == 2) {
