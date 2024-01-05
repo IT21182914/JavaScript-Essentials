@@ -1,15 +1,14 @@
-let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let numberArray = [80, 30, 30];
 
 let i,
   total = 0;
 
 for (i = 0; i < numberArray.length; i++) {
-  if (numberArray[i] % 2 === 0) {
-    total = total + numberArray[i];
+  if (i % 2 === 0) {
+    total += numberArray[i];
   } else {
-    total = total - numberArray[i];
+    total -= numberArray[i];
   }
-
 }
 
 console.log(total);
