@@ -1,4 +1,4 @@
-let numberArray = [80, 30, 30];
+let numberArray = [80, 30, 20];
 
 let i,
   total = 0;
