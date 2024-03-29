@@ -1,3 +1,4 @@
+//this is a simple example of a promise that waits for 3 seconds and then resolves or rejects randomly
 const waitPromise = new Promise((resolve, reject) => {
   const Success = Math.random() > 0.5;
 
