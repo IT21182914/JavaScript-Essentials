@@ -8,15 +8,13 @@ function Car() {
   // Constructor logic for Car
 }
 
-// Set Car prototype to be the same as Vehicle prototype
-Car.prototype = Object.create(Vehicle.prototype);
-Car.prototype.constructor = Car;
-
 // Define a method getCar for Car prototype
 Car.prototype.getCar = function () {
   console.log("Hello");
 };
-
+// Set Car prototype to be the same as Vehicle prototype
+Car.prototype = Object.create(Vehicle.prototype);
+Car.prototype.constructor = Car;
 // Create a new instance of Car
 const car = new Car();
 
