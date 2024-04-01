@@ -1,4 +1,4 @@
-global.name = "Firefox";
+name = "Firefox";
 
 function printName() {
   console.log(this.name);

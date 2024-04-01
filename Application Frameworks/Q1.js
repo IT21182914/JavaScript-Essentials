@@ -4,9 +4,7 @@ function Vehicle() {
 }
 
 // Car class extending Vehicle
-function Car() {
-  // Constructor logic for Car
-}
+function Car() {}
 
 // Define a method getCar for Car prototype
 Car.prototype.getCar = function () {
