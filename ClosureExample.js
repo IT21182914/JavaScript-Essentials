@@ -17,3 +17,5 @@ let counter = createCounter();
 counter.increment(); // Output: Count: 1
 counter.increment(); // Output: Count: 2
 counter.decrement(); // Output: Count: 1
+
+// In the above example, the createCounter function returns an object with two methods increment and decrement.
