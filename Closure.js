@@ -24,3 +24,5 @@ function printTime(getTime) {
 
 let closure = outerFunction();
 closure(); // Output: I am from outerFunction
+
+// In the above example, the innerFunction has access to the outerVariable.
