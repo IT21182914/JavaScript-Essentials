@@ -17,5 +17,9 @@ function getTime() {
   return date.toLocaleTimeString();
 }
 
+function printTime(getTime) {
+  console.log(getTime());
+}
+
 let closure = outerFunction();
 closure(); // Output: I am from outerFunction
