@@ -3,7 +3,7 @@ a closure gives you access to an outer function's scope from an inner function.
 In JavaScript closure is used to encapsulate variables into a function and restrictaccess to it from the outside. */
 
 function outerFunction() {
-  let outerVariable = "I am from outerFunction";
+  let outerVariable = "I am from outerFunction"; //closure
 
   function innerFunction() {
     console.log(outerVariable);
