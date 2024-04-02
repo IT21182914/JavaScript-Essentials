@@ -12,5 +12,10 @@ function outerFunction() {
   return innerFunction;
 }
 
+function getTime() {
+  let date = new Date();
+  return date.toLocaleTimeString();
+}
+
 let closure = outerFunction();
 closure(); // Output: I am from outerFunction
