@@ -11,12 +11,13 @@ function outerFunction() {
 
   return innerFunction;
 }
-
+// In the above example, the innerFunction has access to the outerVariable.
 function getTime() {
   let date = new Date();
   return date.toLocaleTimeString();
 }
 
+// The printTime function takes getTime as an argument and calls it.
 function printTime(getTime) {
   console.log(getTime());
 }
